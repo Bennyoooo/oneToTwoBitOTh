@@ -1,7 +1,5 @@
 Rails.application.routes.draw do
 
-  get 'home/index'
-  get 'about/index'
   devise_for :models
 
   get 'aboutus', to: 'welcome#aboutus'
@@ -11,5 +9,5 @@ Rails.application.routes.draw do
   get 'two', to: 'game#two'
   
   # For details on the DSL available within this file, see http://guides.rubyonrails.org/routing.html
-  root :to => 'home#index'
+  root :to => 'welcome#index'
 end
